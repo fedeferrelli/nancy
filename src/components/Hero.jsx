@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Button from '../utils/Button';
 
 function Hero() {
     return (
@@ -20,7 +21,8 @@ function Hero() {
 
                 </div>
 
-                <button className="border-2 mt-0 m-auto p-4 text-xl max-w-prose font-extralight text-gray-200  sm:tracking-wide uppercase shadow-sm shadow-gray-900 hover:bg-gray-200 hover:text-gray-700 duration-700 w-10/12 sm:w-72">contactame</button>
+               {/*  <button className="border-2 mt-0 m-auto p-4 text-xl max-w-prose font-extralight text-gray-200  sm:tracking-wide uppercase shadow-sm shadow-gray-900 hover:bg-gray-200 hover:text-gray-700 duration-700 w-10/12 sm:w-72">contactame</button> */}
+               <Button buttonText={'contactame'}/>
             </div>
 
            

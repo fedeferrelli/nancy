@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../utils/Button";
 
 import metodologiaData from "../utils/metodologiaData";
 
@@ -22,24 +23,22 @@ function Metodologia() {
           className="sepia-0"
         ></div>
       </div>
-      <div className=" w-full h-full bg-gradient-to-r from-blue-400/70 to-violet-200/80 px-4 flex flex-col justify-center items-center text-gray-900">
-        <div className="text-6xl  font-sans uppercase font-bold   text-center  sm:tracking-wider leading-none mt-8">
+      <div className=" w-full h-full bg-gradient-to-t from-black to-gray-900/80 px-4 flex flex-col justify-evenly items-center text-white">
+        <div className="text-6xl m-auto  font-sans uppercase font-bold text-center  sm:tracking-wider leading-none ">
         Método{" "}
         </div>
 
-        <div className="text-centerflex flex flex-col">
+        <div className="text-centerflex flex flex-col m-auto gap-6">
           {metodologiaData.parrafos.map((parrafo) => (
             <p
               key={parrafo}
-              className="max-w-prose  mt-8 text-center tracking-wide font-extralight sm:text-2xl text-lg py-0"
+              className="max-w-prose text-center tracking-wide font-extralight sm:text-2xl text-lg"
             >
               {parrafo}
             </p>
           ))}
 
-          <button className="border-2  border-slate-700 mt-8 m-auto p-4 text-xl font-extralight  sm:tracking-wide uppercase mb-6 hover:bg-gray-200/30 hover:text-gray-700 duration-700 w-10/12 sm:w-72">
-            Saber mas
-          </button>
+<Button buttonText={'saber mas'}/>
         </div>
       </div>
     </div>

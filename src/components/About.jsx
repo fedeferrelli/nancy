@@ -1,42 +1,49 @@
-import React from 'react';
-import aboutData from '../utils/aboutData';
+import React from "react";
+import Button from '../utils/Button';
+
+import aboutData from "../utils/aboutData";
 
 function About() {
-    return (
-        <main className="flex flex-col sm:flex-row">
+  return (
+    <div className="w-full h-screen shadow-md relative z-10">
+      <div className="w-full h-full absolute -z-10 bg-transparent overflow-hidden ">
+        {/*     <img src='https://cdn.londonandpartners.com/-/media/images/london/visit/general-london/towerbridgecopyrightvisitlondoncomantoinebuchet.jpg?mw=1920&hash=B6672601055B38B34C592E0160B0445AA063B876' className='sepia'/> */}
+        <div
+          style={{
+            backgroundImage:
+              "url(" +
+              "https://www.kaplaninternational.com/files/styles/hero_banner_k_mb/public/school/featured/kaplan-english-school-in-London-4.jpg?itok=WTnubTro" +
+              ")",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            width: "100%",
+            height: "100%",
+          }}
+          className="sepia-0"
+        ></div>
+      </div>
+      <div className=" w-full h-full bg-gradient-to-b from-black to-gray-900/80 px-4 flex flex-col justify-evenly items-center text-white">
+        <div className="text-6xl m-auto  font-sans uppercase font-bold text-center  sm:tracking-wider leading-none ">
+          quien soy{" "}
+        </div>
+
+        <div className="text-centerflex flex flex-col m-auto gap-10">
+          {aboutData.parrafos.map((parrafo) => (
+            <p
+              key={parrafo}
+              className="max-w-prose text-center tracking-wide font-extralight sm:text-2xl text-lg"
+            >
+              {parrafo}
+            </p>
+          ))}
 
 
-     <div className="w-full sm:w-1/2  z-10 sm:h-screen h-48 overflow-hidden">   
-         
-    <div style={{  
-  backgroundImage: "url(" + 'https://www.kaplaninternational.com/files/styles/hero_banner_k_mb/public/school/featured/kaplan-english-school-in-London-4.jpg?itok=WTnubTro' + ")",
-  backgroundPosition: 'center',
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
-  width: '100%',
-  height: '100%'
-}} className="saturate "></div></div>
-
-<div className="w-full text-gray-900 flex flex-col justify-center my-8">
-<h1 className="m-auto text-4xl font-sans uppercase font-bold sm:tracking-wider leading-none my-4 underline-offset-2">Quien Soy</h1>
-
-<div className="h-full text-center px-8 flex  flex-col justify-center">
-
-
-
-{aboutData.parrafos.map(parrafo=>(
-    <p key={parrafo} className="max-w-prose m-auto tracking-wide font-extralight sm:text-2xl text-lg py-0">{parrafo}</p>
-))}
-
-
-<p className="max-w-prose m-auto tracking-wide font-light text-lg uppercase underline py-4">Saber mas</p>
-
-</div>
-
-</div>
-
-        </main>
-    )
+        </div>
+        <Button buttonText={'agenda una clase'}/>
+      </div>
+    </div>
+  );
 }
 
-export default About
+export default About;
