@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Servicios from "./components/Servicios";
 import Metodologia from "./components/Metodologia";
+import Contacto from "./components/Contacto";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <About/>
     <Servicios/>
     <Metodologia/>
+    <Contacto/>
     
     </div>
   )

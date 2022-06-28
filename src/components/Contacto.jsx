@@ -1,11 +1,9 @@
 import React from "react";
 import Button from "../utils/Button";
 
-import metodologiaData from "../utils/metodologiaData";
-
-function Metodologia() {
+function Contacto() {
   return (
-    <div className="w-full h-screen  sm:h-screen shadow-md relative z-10" id='meto'>
+    <div className="w-full h-screen  sm:h-screen shadow-md relative z-10" id='contacto'>
       <div className="w-full h-full absolute -z-10 bg-transparent overflow-hidden ">
         <div
           style={{
@@ -25,25 +23,14 @@ function Metodologia() {
       <div className=" w-full h-full bg-gradient-to-t from-black to-gray-900/70 px-4 flex flex-col justify-evenly items-center text-white">
 
         <div className="text-6xl m-auto  font-sans uppercase font-bold text-center  sm:tracking-wider leading-none ">
-        Método{" "}
+        Contacto{" "}
         </div>
 
-        <div className="text-center flex flex-col m-auto gap-6">
-          {metodologiaData.parrafos.map((parrafo) => (
-            <p
-              key={parrafo}
-              className="max-w-prose text-center tracking-wide font-extralight sm:text-2xl text-lg"
-            >
-              {parrafo}
-            </p>
-          ))}
-
-        </div>
         
-<Button buttonText={'saber mas'}/>
+<Button buttonText={'Enviar'}/>
       </div>
     </div>
   );
 }
 
-export default Metodologia;
+export default Contacto;

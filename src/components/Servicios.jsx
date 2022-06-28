@@ -1,10 +1,10 @@
 import React from 'react';
 import servicios from '../utils/services';
-import Button from '../utils/Button';
+import {Link} from 'react-scroll'
 
 function Servicios() {
     return (
-        <main className="bg-gray-100 py-12 flex flex-col sm:flex-row gap-4 sm:px-8" id='servicios'>
+        <main className="bg-gray-100 py-12 sm:py-36 flex flex-col sm:flex-row gap-4 sm:px-8" id='servicios'>
 
 
         {servicios.map(servicio =>(
@@ -16,7 +16,8 @@ function Servicios() {
 
                 <div className="w-full text-2xl text-center">${servicio.precio} mensuales</div>
 
-                <button className="border-2 border-black/60 m-auto p-4 text-lg max-w-prose font-extralight bg-black text-white  sm:tracking-wide uppercase hover:bg-black/20 hover:text-black duration-700 w-11/12 sm:w-3/4">consultar</button>
+                <button className="border-2 border-black/60 m-auto p-4 text-lg max-w-prose font-extralight bg-black text-white  sm:tracking-wide uppercase sm:hover:bg-black/20 sm:hover:text-black duration-700 w-11/12 sm:w-3/4">
+                    <Link activeClass="active" to={'contacto'} spy={true} smooth={true} duration={1000}>consultar</Link></button>
             </div>
         ))}
             
