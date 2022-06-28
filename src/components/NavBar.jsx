@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
-import {GiHamburgerMenu, GiCancel} from 'react-icons/gi'
+import {GiHamburgerMenu, GiCancel} from 'react-icons/gi';
+
+import {Link, link} from 'react-scroll';
 
 function NavBar() {
 
-    const navbarLinks =[{item: 'Quién soy', link:'fede'},
+    const navbarLinks =[{item: 'Quién soy', link:'about', duration: 700},
     {item: 'Metodología', link:'meto'},
     {item: 'Servicios', link:'servicios'},
     {item: 'Contacto', link:'contacto'}]
@@ -17,7 +19,10 @@ function NavBar() {
         <div className="text-white fixed z-20 w-full">
         <section className="sm:flex flex-row justify-end gap-10 pt-2  pr-8 hidden">    
 {navbarLinks.map(navLink =>(
-    <div key={navLink.item} className="uppercase hover:border-b-4 ease-in-out duration-300 cursor-pointer">{navLink.item}</div>
+    <div key={navLink.item} className="uppercase hover:border-b-4 ease-in-out duration-300 cursor-pointer">
+        <Link activeClass="active" to={navLink.link} spy={true} smooth={true} duration={navLink.duration}> {navLink.item} </Link>
+        
+        </div>
 ))}</section>
             <section className="sm:hidden flex pr-3 pt-3 justify-end ">
                 
@@ -38,7 +43,7 @@ function NavBar() {
 <div className="w-11/12 border m-auto flex flex-col gap-10 p-6 bg-white text-gray-600 text-lg font-bold mt-2">
 
 {navbarLinks.map(navLink =>(
-    <div key={navLink.item} className="uppercase" onClick={()=>setshowNav(!showNav)} >{navLink.item}</div>))}
+    <div key={navLink.item} className="uppercase" onClick={()=>setshowNav(!showNav)} ><Link activeClass="active" to={navLink.link} spy={true} smooth={true} duration={navLink.duration} onClick={()=>setshowNav(!showNav)}> {navLink.item} </Link></div>))}
 
 
 </div> }

@@ -5,7 +5,7 @@ import aboutData from "../utils/aboutData";
 
 function About() {
   return (
-    <div className="w-full h-screen shadow-md relative z-10">
+    <div className="w-full h-screen shadow-md relative z-10" id='about'>
       <div className="w-full h-full absolute -z-10 bg-transparent overflow-hidden ">
         {/*     <img src='https://cdn.londonandpartners.com/-/media/images/london/visit/general-london/towerbridgecopyrightvisitlondoncomantoinebuchet.jpg?mw=1920&hash=B6672601055B38B34C592E0160B0445AA063B876' className='sepia'/> */}
         <div

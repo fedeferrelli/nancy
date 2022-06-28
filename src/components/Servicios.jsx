@@ -4,7 +4,7 @@ import Button from '../utils/Button';
 
 function Servicios() {
     return (
-        <main className="bg-gray-100 py-12 flex flex-col sm:flex-row gap-4 sm:px-8">
+        <main className="bg-gray-100 py-12 flex flex-col sm:flex-row gap-4 sm:px-8" id='servicios'>
 
 
         {servicios.map(servicio =>(
