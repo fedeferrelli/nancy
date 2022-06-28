@@ -4,7 +4,7 @@ import aboutData from "../utils/aboutData";
 
 function Hero_copy() {
   return (
-    <div className="w-full h-auto  sm:h-screen shadow-md relative z-10">
+    <div className="w-full h-screen shadow-md relative z-10">
       <div className="w-full h-full absolute -z-10 bg-transparent overflow-hidden ">
         {/*     <img src='https://cdn.londonandpartners.com/-/media/images/london/visit/general-london/towerbridgecopyrightvisitlondoncomantoinebuchet.jpg?mw=1920&hash=B6672601055B38B34C592E0160B0445AA063B876' className='sepia'/> */}
         <div
@@ -37,7 +37,7 @@ function Hero_copy() {
             </p>
           ))}
 
-          <button className="border-2  border-slate-700 mt-8 m-auto p-4 text-xl font-extralight  sm:tracking-wide uppercase mb-6 hover:bg-gray-200/30 hover:text-gray-700 duration-700 ">
+          <button className="border-2  border-slate-700 mt-8 m-auto p-4 text-xl font-extralight  sm:tracking-wide uppercase mb-6 hover:bg-gray-200/30 hover:text-gray-700 duration-700 w-10/12 sm:w-72">
             Agenda una clase
           </button>
         </div>
