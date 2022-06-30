@@ -22,7 +22,7 @@ function About() {
           className="sepia-0"
         ></div>
       </div>
-      <div className=" w-full h-full bg-gradient-to-t from-black to-gray-900/70 px-4 flex flex-col justify-evenly items-center text-white">
+      <div className=" w-full h-full bg-gradient-to-b from-black via-black/80 to-gray-900/70 px-4 flex flex-col justify-evenly items-center text-white">
         <div className="text-6xl m-auto  font-sans uppercase font-bold text-center  sm:tracking-wider leading-none ">
           quien soy{" "}
         </div>
