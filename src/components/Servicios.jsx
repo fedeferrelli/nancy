@@ -4,9 +4,9 @@ import {Link} from 'react-scroll'
 
 function Servicios() {
     return (
-        <main className="bg-gray-100 py-12 sm:py-36 flex flex-col sm:flex-row gap-4 sm:px-8" id='servicios'>
+        <main className="bg-gray-100 py-12 sm:py-36  sm:px-8" id='servicios'>
 
-            <section className="max-w-[1240px]">
+            <section className="flex flex-col sm:flex-row gap-4 max-w-[1240px] m-auto">
 
 
         {servicios.map(servicio =>(

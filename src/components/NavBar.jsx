@@ -28,12 +28,16 @@ function NavBar() {
         
         </div>
 ))}</section>
-            <section className="sm:hidden flex pr-3 pt-3 justify-end ">
+            <section className="sm:hidden flex pr-3 pt-3 justify-end">
                 
              {!showNav ?
-             <GiHamburgerMenu className="text-3xl" onClick={()=>setshowNav(!showNav)}/> :
 
+             <div className="text-3xl p-2 bg-black/10 rounded-full">
+             <GiHamburgerMenu className="text-3xl" onClick={()=>setshowNav(!showNav)}/></div> :
+
+<div className="text-3xl p-2 bg-black/10 rounded-full">
              <GiCancel className="text-3xl" onClick={()=>setshowNav(!showNav)}/>
+             </div>
             }   
                 
                 
@@ -44,7 +48,7 @@ function NavBar() {
                   
             {showNav &&
             
-            <section className="h-screen">
+            <section className="h-screen" onClick={()=>setshowNav(!showNav)}>
 
 <div className="w-11/12 border m-auto flex flex-col gap-10 p-6 bg-white text-gray-600 text-lg font-bold mt-2">
 
