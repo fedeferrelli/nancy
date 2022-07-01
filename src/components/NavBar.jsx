@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {GiHamburgerMenu, GiCancel} from 'react-icons/gi';
 
 import {Link, link} from 'react-scroll';
+import {Fade} from 'react-awesome-reveal'
 
 function NavBar() {
 
@@ -16,7 +17,10 @@ function NavBar() {
     return (
 
         <main>
+       
+
         <div className="text-white fixed z-20 w-full">
+        <Fade duration='3000'>
         <section className="sm:flex flex-row justify-end gap-10 pt-2  pr-8 hidden">    
 {navbarLinks.map(navLink =>(
     <div key={navLink.item} className="uppercase hover:border-b-4 ease-in-out duration-300 cursor-pointer">
@@ -52,8 +56,10 @@ function NavBar() {
 </section> }
 
             </section>
+
+            </Fade>
         </div>
-     
+       
         </main>
     )
 }

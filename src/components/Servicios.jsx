@@ -6,6 +6,8 @@ function Servicios() {
     return (
         <main className="bg-gray-100 py-12 sm:py-36 flex flex-col sm:flex-row gap-4 sm:px-8" id='servicios'>
 
+            <section className="max-w-[1240px]">
+
 
         {servicios.map(servicio =>(
             <div key={servicio.precio} className="w-11/12 sm:w-1/3 border-2 border-black  shadow-md shadow-slate-300 m-auto py-8 px-4 flex flex-col justify-evenly gap-6 font-sans">
@@ -20,6 +22,7 @@ function Servicios() {
                     <Link activeClass="active" to={'contacto'} spy={true} smooth={true} duration={1000}>consultar</Link></button>
             </div>
         ))}
+        </section>
             
         </main>
     )

@@ -15,13 +15,21 @@ function Hero() {
 }} className="sepia"></div> 
             </div>
             <div className=" w-full h-full bg-gradient-to-b from-red-800/70 to-blue-900/60 px-4 flex flex-col justify-center items-center">
-                <div className="m-auto text-[70px] text-white font-sans uppercase font-bold   text-center  sm:tracking-wider leading-none ">nancy cendra 
-                <span className='block text-2xl max-w-prose font-extralight text-gray-200  sm:tracking-wide mt-6 sm:mt-2'>Take learning beyond the classroom and into the real world </span> <span className="text-4xl"></span>
+
+                <div className="m-auto text-[70px] text-white font-sans uppercase font-bold   text-center  sm:tracking-wider leading-none w-full">
+                    <h1> nancy cendra</h1> 
+                <h2 className='inline-block text-2xl max-w-prose font-extralight text-gray-200  sm:tracking-wide mt-6 sm:mt-2 text-center'>Take learning beyond the classroom and into the real world </h2> 
 
                 </div>
 
+               <div className='m-auto w-full'>
+               
                <Button buttonText={'contactame'} link={'contacto'}/>
-            </div>
+               
+               </div>
+               
+               
+               </div>
 
            
         </div>
