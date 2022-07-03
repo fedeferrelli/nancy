@@ -49,9 +49,9 @@ function About() {
 
         </div>
 
-        
+        <div className="mt-10 w-full">
         <Button buttonText={'agenda una clase'} link={'contacto'}/>
-      
+        </div>
         </div>
         </Fade>
       </div>

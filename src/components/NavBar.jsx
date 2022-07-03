@@ -53,7 +53,7 @@ function NavBar() {
 <div className="w-11/12 border m-auto flex flex-col gap-10 p-6 bg-white text-gray-600 text-lg font-bold mt-2">
 
 {navbarLinks.map(navLink =>(
-    <div key={navLink.item} className="uppercase" onClick={()=>setshowNav(!showNav)} ><Link activeClass="active" to={navLink.link} spy={true} smooth={true} duration={navLink.duration} onClick={()=>setshowNav(!showNav)}> {navLink.item} </Link></div>))}
+    <div key={navLink.item} className="uppercase" onClick={()=>setshowNav(!showNav)}><Link activeClass="active" to={navLink.link} spy={true} smooth={true} duration={navLink.duration} onClick={()=>setshowNav(!showNav)} className="h-full p-2"> {navLink.item} </Link></div>))}
 
 
 </div>

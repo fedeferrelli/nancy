@@ -18,8 +18,8 @@ function App() {
     <About/>
     <Servicios/>
     <Metodologia setShowMore={setShowMore}/>
-    
-<FlippedRoom/> 
+    {showMore &&
+<FlippedRoom setShowMore={setShowMore}/> }
     <Contacto/>
     
     </div>

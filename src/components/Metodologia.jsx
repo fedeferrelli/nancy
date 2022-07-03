@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import Button from "../utils/Button";
 import {Fade} from 'react-awesome-reveal';
-import {Link} from 'react-scroll';
+import {scroller} from 'react-scroll';
 import FlippedRoom from "./FlippedRoom";
+
 
 import metodologiaData from "../utils/metodologiaData";
 
@@ -13,8 +14,26 @@ function Metodologia({setShowMore}) {
 console.log(showMore) */
 
 
+
+
+const showMoreMetodology = async() => {
+
+    await setShowMore(true);
+
+  scroller.scrollTo('flipped', {
+    duration: 700,
+    smooth: true,
+  
+  })
+}
+
+
+
+
+
+
   return (
-    <div className="w-full h-screen  sm:h-screen shadow-md relative z-10" id='meto'>
+    <div className="w-full sm:h-screen shadow-md relative z-10" id='meto'>
       <div className="w-full h-full absolute -z-10 bg-transparent overflow-hidden ">
         <div
           style={{
@@ -31,13 +50,13 @@ console.log(showMore) */
           className="sepia-0"
         ></div>
       </div>
-      <div className="h-full bg-gradient-to-b from-black via-black/80 to-gray-900/70 px-4 flex flex-col justify-evenly items-center text-white">
+      <div className="h-full bg-gradient-to-b from-black via-black/80 to-gray-900/70 px-4 flex flex-col justify-evenly items-center text-white py-10">
 
 <Fade duration="2500" className="h-full">
 
   <div className="h-full flex flex-col justify-evenly items-center">
 
-        <div className="text-6xl m-auto  font-sans uppercase font-bold text-center  sm:tracking-wider leading-none ">
+        <div className="text-6xl m-auto  font-sans uppercase font-bold text-center  sm:tracking-wider leading-none pb-10">
         Método{" "}
         </div>
 
@@ -53,10 +72,10 @@ console.log(showMore) */
 
         </div>
 
-       
+        <div className="mt-10 w-full">
         
-        <Button buttonText={'saber más'} link={'flipped'} duration={700}/>
-
+        <button className="border-2 m-auto text-xl font-extralight text-gray-200  sm:tracking-wide uppercase sm:hover:bg-gray-200 sm:hover:text-gray-700 duration-700 w-full sm:w-72 flex" onClick={showMoreMetodology}><div className='p-4 w-full h-full'> saber mas</div></button>
+        </div>
       </div>
 
 
