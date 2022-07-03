@@ -5,8 +5,9 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Servicios from "./components/Servicios";
 import Metodologia from "./components/Metodologia";
-import Contacto from "./components/Contacto";
+
 import FlippedRoom from "./components/FlippedRoom";
+import Contact from "./components/Contact";
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
     <Metodologia setShowMore={setShowMore}/>
     {showMore &&
 <FlippedRoom setShowMore={setShowMore}/> }
-    <Contacto/>
+    <Contact/>
     
     </div>
   )

@@ -47,21 +47,22 @@ manera fundamental.</p>
 
 <div>
 
-<div className="h-auto flex flex-wrap justify-evenly gap-4">    
+<div className="h-auto flex flex-wrap justify-evenly gap-8">    
 
 {flippedRoomData.pilares.map((pilar)=>(
     <div  key={pilar.title} className="sm:w-1/2 m-auto">
         
-            <p className="px-4 w-auto m-auto text-gray-200 bg-black text-center">{pilar.title}</p>
+            <p className="px-4 py-1 w-auto m-auto text-gray-200 bg-black text-center">{pilar.title}</p>
     <p className="text-center p-4 border border-black ">{pilar.text}</p>
     </div>
 ))}
 
 </div>
 
-<p className="max-w-prose m-auto pt-8 pb-6 uppercase font-bold text-xl text-center">beneficios del modelo:</p>
+<p className="hidden sm:block max-w-prose m-auto pt-8 pb-6 uppercase font-bold text-xl text-center">beneficios del modelo:</p>
 
 <div className="sm:flex-wrap sm:flex justify-center gap-6 hidden">
+    
 
 {flippedRoomData.beneficios.map((beneficio)=>(
     <div  key={beneficio} className="sm:w-auto sm:p-2 sm:px-3 sm:rounded-full sm:border sm:border-black sm:shadow-lg">
@@ -73,8 +74,9 @@ manera fundamental.</p>
 
 </div>
 
-<div className="sm:hidden w-full border text-center p-4 border-black flex flex-col justify-between min-h-[175px]">
+<div className="sm:hidden w-full border text-center p-4 mt-10 border-black flex flex-col justify-between min-h-[250px]">
 
+<p className="max-w-prose uppercase font-bold text-xl text-center sm:hidden">beneficios del modelo</p>
 
 <div>
 {flippedRoomData.beneficios[benefitNumber]}
@@ -95,7 +97,7 @@ manera fundamental.</p>
 
 </div>
 
-<button className="border-2 border-black m-auto text-xl font-extralight text-black  sm:tracking-wide uppercase sm:hover:bg-black sm:hover:text-gray-200 duration-700 w-full sm:w-72 flex mt-4 mt-10 sm:mt-20" onClick={showLessMetodology}><div className='p-4 w-full h-full'> ver menos</div></button>
+<button className="border-2 border-black m-auto text-xl font-extralight text-black  sm:tracking-wide uppercase sm:hover:bg-black sm:hover:text-gray-200 duration-700 w-full sm:w-72 flex mt-10 sm:mt-20" onClick={showLessMetodology}><div className='p-4 w-full h-full'> ver menos</div></button>
 
 </section>
 
