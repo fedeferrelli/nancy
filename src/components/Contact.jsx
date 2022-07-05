@@ -1,18 +1,11 @@
 import React, {useState} from "react";
-import Button from "../utils/Button";
+
 import {Fade} from 'react-awesome-reveal';
-import {scroller} from 'react-scroll';
-import FlippedRoom from "./FlippedRoom";
+
+
+import {BsInstagram, BsWhatsapp, BsAt,  BsTelephone} from 'react-icons/bs'
 
 import ContactForm from "../utils/ContactForm";
-
-import email from "../utils/assets/email.svg";
-import whatsapp from "../utils/assets/whatsapp.svg";
-import telephone from "../utils/assets/phone.svg"
-import instagram from "../utils/assets/instagram.svg" 
-
-
-import metodologiaData from "../utils/metodologiaData";
 
 function Contact() {
 
@@ -20,7 +13,7 @@ function Contact() {
   return (
     <div className="w-full sm:min-h-screen shadow-md relative z-10" id='contacto'>
       
-      <div className="h-full bg-black px-4 flex flex-col justify-evenly items-center text-white py-14">
+      <div className="h-full bg-black px-4 flex flex-col justify-evenly items-center text-white py-20">
 
 <Fade duration="2500" className="h-full">
 
@@ -42,19 +35,23 @@ function Contact() {
         <section className="flex flex-col  justify-center items-center">
           <div className="flex flex-row justify-evenly items-center w-full max-w-[450px] py-4">
             <a
-              href="https://www.instagram.com/paufuster77/"
+              href="https://www.instagram.com/lene.arg/"
               target="blank"
               rel="noreferrer"
             >
-              <img src={instagram} alt="instagram" />
+           
+              <BsInstagram className="text-4xl"/>
             </a>
 
             <a
-              href='https://api.whatsapp.com/send?phone=5492916491577&text=Hola,%20Pau.%20Cómo%20estás?%20Me%20gustaría%20hecerte%20la%20siguiente%20consulta.%0D%0A%0D%0A'
+              href='https://api.whatsapp.com/send?phone=5492915075493=Hola,%20Nancy.%20Cómo%20estás?%20Me%20gustaría%20hecerte%20la%20siguiente%20consulta.%0D%0A%0D%0A'
               target="blank"
               rel="noreferrer"
             >
-              <img src={whatsapp} alt="whatsapp" className="w-12" />
+           
+
+              <BsWhatsapp className="text-4xl"/>
+
             </a>
 
             <a
@@ -63,15 +60,17 @@ function Contact() {
               rel="noreferrer"
               className="sm:hidden"
             >
-              <img src={telephone} alt="telephone" />
+          
+              <BsTelephone  className="text-4xl"/>
             </a>
 
             <a
-              href="mailto:paulafusterpravato@gmail.com"
+              href="mailto:nancycendra1@gmail.com"
               target="blank"
               rel="noreferrer"
             >
-              <img src={email} alt="email" />
+          
+              <BsAt className="text-4xl rounded-full border-white border-2"/>
             </a>
           </div>
 

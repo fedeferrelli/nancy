@@ -1,14 +1,18 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef } from "react"
+import {CgSpinnerTwoAlt} from 'react-icons/cg'; 
 
 import emailjs from "@emailjs/browser";
 
 function ContactForm() {
   const [showOK, setShowOK] = useState(false);
+ const [showSpinner, setShowSpinner] = useState(true) 
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    
+    setShowOK(true);
 
     emailjs
       .sendForm(
@@ -20,12 +24,14 @@ function ContactForm() {
       .then(
         (result) => {
           console.log(result.text);
-          setShowOK(true);
+         
         },
         (error) => {
           console.log(error.text);
         }
       );
+
+      setShowSpinner(false)
   };
 
   const AcceptAndScrollToTop = () => {
@@ -38,11 +44,18 @@ function ContactForm() {
       <form
         onSubmit={sendEmail}
         ref={form}
-        className="sm:text-sm m-auto flex flex-col justify-center items-center py-10"
+        className="sm:text-sm m-auto flex flex-col justify-center items-center py-4"
       >
         {showOK && (
-          <div className="absolute w-full h-full z-50 text-center flex flex-col justify-center items-center">
-            <div className="w-full h-full flex flex-col justify-center sm:w-3/4 sm:h-auto border  p-10 text-white">
+          <div className="absolute z-50 text-center flex flex-col justify-center items-center shadow-md shadow-gray-200 bg-gray-200 sm:max-w-[450px] w-11/12 h-96 ">
+
+            {showSpinner ? 
+
+            <div>
+              <CgSpinnerTwoAlt className="text-black text-5xl animate-spin"/>
+            </div>
+            :
+            <div className="w-full h-auto flex flex-col justify-center sm:w-3/4 sm:h-auto border  p-10 text-black ">
               <h1 className="text-xl mb-4">
                 <span className="text-3xl block ">
                   Gracias
@@ -59,6 +72,7 @@ function ContactForm() {
                 OK
               </button>
             </div>
+                }
           </div>
         )}
         <h1 className="max-w-prose text-left tracking-wide sm:text-2xl font-thin text-2xl">

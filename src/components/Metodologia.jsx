@@ -50,7 +50,7 @@ const showMoreMetodology = async() => {
           className="sepia-0"
         ></div>
       </div>
-      <div className="h-full bg-gradient-to-b from-black/95 via-black/75 to-gray-900/70 px-4 flex flex-col justify-evenly items-center text-white py-14">
+      <div className="h-full bg-gradient-to-b from-black/95 via-black/75 to-gray-900/70 px-4 flex flex-col justify-evenly items-center text-white py-20">
 
 <Fade duration="2500" className="h-full">
 

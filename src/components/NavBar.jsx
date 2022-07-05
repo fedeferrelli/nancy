@@ -7,8 +7,8 @@ import {Fade} from 'react-awesome-reveal'
 function NavBar() {
 
     const navbarLinks =[{item: 'Quién soy', link:'about', duration: 700},
-    {item: 'Metodología', link:'meto', duration: 1000},
-    {item: 'Servicios', link:'servicios', duration: 1300},
+    {item: 'Clases', link:'servicios', duration: 1300},
+    {item: 'Método', link:'meto', duration: 1000},
     {item: 'Contacto', link:'contacto', duration: 1600}]
 
     const [showNav, setshowNav] = useState(false)
