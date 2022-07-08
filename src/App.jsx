@@ -11,12 +11,13 @@ import Contact from "./components/Contact";
 
 
 function App() {
-  const [showMore, setShowMore] = useState(false)
+  const [showMore, setShowMore] = useState(false);
+  const [spanish, setSpanish] = useState(true);
   return (
     <div className="min-h-screen bg-gray-200">
-      <NavBar/>
+      <NavBar spanish={spanish} setSpanish={setSpanish}/>
     <Hero/>
-    <About/>
+    <About spanish={spanish} setSpanish={setSpanish}/>
     <Servicios/>
     <Metodologia setShowMore={setShowMore}/>
     {showMore &&

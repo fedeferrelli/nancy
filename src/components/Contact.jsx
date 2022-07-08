@@ -40,7 +40,7 @@ function Contact() {
               rel="noreferrer"
             >
            
-              <BsInstagram className="text-4xl"/>
+              <BsInstagram className="text-4xl font-thin"/>
             </a>
 
             <a
@@ -50,7 +50,7 @@ function Contact() {
             >
            
 
-              <BsWhatsapp className="text-4xl"/>
+              <BsWhatsapp className="text-4xl font-thin"/>
 
             </a>
 
@@ -61,7 +61,7 @@ function Contact() {
               className="sm:hidden"
             >
           
-              <BsTelephone  className="text-4xl"/>
+              <BsTelephone  className="text-4xl font-thin"/>
             </a>
 
             <a
@@ -70,7 +70,7 @@ function Contact() {
               rel="noreferrer"
             >
           
-              <BsAt className="text-4xl rounded-full border-white border-2"/>
+              <BsAt className="text-4xl rounded-full border-white border-2 font-thin"/>
             </a>
           </div>
 

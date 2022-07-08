@@ -1,10 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Button from '../utils/Button';
 import {Fade} from 'react-awesome-reveal'
 
 import aboutData from "../utils/aboutData";
 
-function About() {
+function About({spanish}) {
+
+ var data;
+
+
+  if(spanish){data=aboutData.spanish}
+  else {data=aboutData.english}
+
   return (
     <div className="w-full sm:h-screen shadow-md relative z-10" id='about'>
 
@@ -33,11 +40,12 @@ function About() {
         <div className="h-full flex flex-col justify-evenly items-center">
         
         <div className="text-6xl m-auto  font-sans uppercase font-bold text-center  sm:tracking-wider leading-none pb-10">
-          quien soy{" "}
+         {data.titulo}
         </div>
 
+
         <div className="text-left flex flex-col m-auto gap-10 pb-10">
-          {aboutData.parrafos.map((parrafo) => (
+         {data.parrafos.map((parrafo) => (
             <p
               key={parrafo}
               className="max-w-prose tracking-wide  sm:text-xl font-thin text-lg"
@@ -50,7 +58,7 @@ function About() {
         </div>
 
         <div className="mt-10 w-full">
-        <Button buttonText={'agenda una clase'} link={'contacto'}/>
+        <Button buttonText={data.boton} link={'contacto'}/>
         </div>
         </div>
         </Fade>

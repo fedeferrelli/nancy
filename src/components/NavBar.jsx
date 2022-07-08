@@ -4,14 +4,20 @@ import {GiHamburgerMenu, GiCancel} from 'react-icons/gi';
 import {Link, link} from 'react-scroll';
 import {Fade} from 'react-awesome-reveal'
 
-function NavBar() {
+function NavBar({spanish, setSpanish}) {
 
     const navbarLinks =[{item: 'Quién soy', link:'about', duration: 700},
     {item: 'Clases', link:'servicios', duration: 1300},
     {item: 'Método', link:'meto', duration: 1000},
     {item: 'Contacto', link:'contacto', duration: 1600}]
 
-    const [showNav, setshowNav] = useState(false)
+    const [showNav, setshowNav] = useState(false);
+
+    const changeLanguage = () =>{
+
+        setSpanish(!spanish)
+            
+        };
    
 
     return (
@@ -19,7 +25,7 @@ function NavBar() {
         <main>
        
 
-        <div className="text-white fixed z-20 w-full">
+        <div className="text-white fixed z-20 w-full ">
         <Fade duration='3000'>
         <section className="sm:flex flex-row justify-end gap-10 pt-2  pr-8 hidden">    
 {navbarLinks.map(navLink =>(
@@ -32,12 +38,20 @@ function NavBar() {
                 
              {!showNav ?
 
-             <div className="text-3xl p-2 bg-black/10 rounded-full">
-             <GiHamburgerMenu className="text-3xl" onClick={()=>setshowNav(!showNav)}/></div> :
 
-<div className="text-3xl p-2 bg-black/10 rounded-full">
+             <section className="flex flex-row justify-between w-full p-3">
+
+<div onClick={()=>changeLanguage()} className="flex">
+    <div className="px-2 p-1 rounded-full m-auto bg-black/10" >{spanish ? 'ENG' : 'ESP'}</div></div>
+
+             <div className="text-3xl p-2 bg-black/10 rounded-full">
+             <GiHamburgerMenu className="text-3xl" onClick={()=>setshowNav(!showNav)}/></div></section> :
+
+<div className="text-3xl p-2 bg-black/10 rounded-full mx-3">
              <GiCancel className="text-3xl" onClick={()=>setshowNav(!showNav)}/>
              </div>
+
+             
             }   
                 
                 
