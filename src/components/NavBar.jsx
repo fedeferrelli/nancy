@@ -41,7 +41,7 @@ function NavBar({spanish, setSpanish}) {
 
              <section className="flex flex-row justify-between w-full p-3">
 
-<div /* onClick={()=>changeLanguage()}  */className="flex">
+<div onClick={()=>changeLanguage()} className="flex">
     <div className="px-2 p-1 rounded-full m-auto bg-black/10" >{spanish ? 'ENG' : 'ESP'}</div></div>
 
              <div className="text-3xl p-2 bg-black/10 rounded-full">
