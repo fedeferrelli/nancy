@@ -52,7 +52,7 @@ function ContactForm() {
             {showSpinner ? 
 
             <div>
-              <CgSpinnerTwoAlt className="text-black text-5xl animate-spin"/>
+              <CgSpinnerTwoAlt className="text-gray-700 text-5xl animate-spin"/>
             </div>
             :
             <div className="w-full h-auto flex flex-col justify-center sm:w-3/4 sm:h-auto border  p-10 text-black ">
@@ -79,7 +79,7 @@ function ContactForm() {
          Enviame un mensaje
         </h1>
 
-        <p className="mt-8 w-full border border-t-transparent border-terciary ">
+        <p className="mt-8 w-full border border-t-transparent border-violet-400 ">
           <label
             htmlFor="nombre"
             className="w-full px-4 ease-in-out duration-300"
@@ -95,7 +95,7 @@ function ContactForm() {
           ></input>
         </p>
 
-        <p className="mt-8 w-full border border-t-transparent">
+        <p className="mt-8 w-full border border-violet-400 border-t-transparent">
           <label
             htmlFor="mail"
             className="w-full px-4 ease-in-out duration-300"
@@ -112,7 +112,7 @@ function ContactForm() {
           ></input>
         </p>
 
-        <p className="mt-8 w-full border border-t-transparent">
+        <p className="mt-8 w-full border border-violet-400 border-t-transparent">
           <label
             htmlFor="asunto"
             className="w-full px-4 ease-in-out duration-300"
@@ -128,7 +128,7 @@ function ContactForm() {
           ></input>
         </p>
 
-        <p className="mt-8 w-full border border-t-transparent">
+        <p className="mt-8 w-full border border-violet-400 border-t-transparent">
           <label
             htmlFor="mensaje"
             className="w-full px-4 ease-in-out duration-300"

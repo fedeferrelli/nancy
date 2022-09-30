@@ -20,7 +20,7 @@ function About({spanish}) {
           style={{
             backgroundImage:
               "url(" +
-              "https://www.kaplaninternational.com/files/styles/hero_banner_k_mb/public/school/featured/kaplan-english-school-in-London-4.jpg?itok=WTnubTro" +
+              "https://www.flytap.com/-/media/Flytap/new-tap-pages/destinations/europe/uk/london/destinations-london-banner-mobile-1024x553.jpg" +
               ")",
             backgroundPosition: "center",
             backgroundSize: "cover",

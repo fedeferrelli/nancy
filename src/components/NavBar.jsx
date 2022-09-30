@@ -61,8 +61,8 @@ function NavBar({ spanish, setSpanish }) {
           </section>
           <section className="sm:hidden flex pr-3 pt-3 justify-end">
             {!showNav ? (
-              <section className="flex flex-row justify-between w-full p-3">
-                <div onClick={() => changeLanguage()} className="flex">
+              <section className="flex flex-row justify-end w-full p-3 py-0 ">
+                <div onClick={() => changeLanguage()} className="hidden">
                   <div className="px-2 p-1 rounded-full m-auto bg-black/10">
                     {spanish ? "ENG" : "ESP"}
                   </div>
