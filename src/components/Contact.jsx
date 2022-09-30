@@ -13,7 +13,7 @@ function Contact() {
   return (
     <div className="w-full sm:min-h-screen shadow-md relative z-10" id='contacto'>
       
-      <div className="h-full bg-violet-300 px-4 flex flex-col justify-evenly items-center text-gray-700 py-20">
+      <div className="h-full bg-slate-300 px-4 flex flex-col justify-evenly items-center text-gray-700 py-20">
 
 <Fade duration="500" className="h-full">
 

@@ -95,7 +95,7 @@ function ContactForm() {
           ></input>
         </p>
 
-        <p className="mt-8 w-full border border-violet-400 border-t-transparent">
+        <p className="mt-8 w-full border border-slate-400 border-t-transparent">
           <label
             htmlFor="mail"
             className="w-full px-4 ease-in-out duration-300"
@@ -112,7 +112,7 @@ function ContactForm() {
           ></input>
         </p>
 
-        <p className="mt-8 w-full border border-violet-400 border-t-transparent">
+        <p className="mt-8 w-full border border-slate-400 border-t-transparent">
           <label
             htmlFor="asunto"
             className="w-full px-4 ease-in-out duration-300"
@@ -128,7 +128,7 @@ function ContactForm() {
           ></input>
         </p>
 
-        <p className="mt-8 w-full border border-violet-400 border-t-transparent">
+        <p className="mt-8 w-full border border-slate-400 border-t-transparent">
           <label
             htmlFor="mensaje"
             className="w-full px-4 ease-in-out duration-300"
