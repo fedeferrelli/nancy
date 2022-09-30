@@ -79,7 +79,7 @@ function ContactForm() {
          Enviame un mensaje
         </h1>
 
-        <p className="mt-8 w-full border border-t-transparent border-violet-400 ">
+        <p className="mt-8 w-full border border-t-transparent border-slate-400 ">
           <label
             htmlFor="nombre"
             className="w-full px-4 ease-in-out duration-300"

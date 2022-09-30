@@ -30,7 +30,7 @@ function FlippedRoom({setShowMore}) {
 
 
     return (
-        <main className="w-full flex flex-col gap-10 text-lg" id="flipped">
+        <main className="w-full text-gray-700 flex flex-col gap-10 text-lg" id="flipped">
             <section className="w-11/12 border max-w-[1240px] m-auto py-10">
 
             <div className="text-4xl m-auto  font-sans uppercase font-bold text-center  sm:tracking-wider leading-none ">
