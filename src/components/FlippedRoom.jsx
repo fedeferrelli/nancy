@@ -74,19 +74,33 @@ manera fundamental.</p>
 
 </div>
 
-<div className="sm:hidden w-full border text-center p-4 mt-10 border-black flex flex-col justify-between min-h-[250px]">
+<div className="sm:hidden w-full border text-center p-4 mt-10  flex flex-col justify-between  ">
 
 <p className="max-w-prose uppercase font-bold text-xl text-center sm:hidden">beneficios del modelo</p>
 
-<div>
-{flippedRoomData.beneficios[benefitNumber]}
+<div className="h-auto mt-2  w-full pt-2 overflow-auto whitespace-nowrap">
+
+{flippedRoomData.beneficios.map(e=>(
+
+
+<div className="w-full m-auto h-full inline-block rounded-lg mr-3 align-middle overflow-hidden text-gray-800 whitespace-normal">
+    
+    <div className="m-auto">
+
+            <h1 className=" m-auto font font-semibold tracking-wide">{e}</h1>
+            </div>
+    
+    </div>
+
+))}
+
 </div>
 
 
 
-<div className="w-full text-center flex text-4xl mt-4">
-<BsFillArrowRightCircleFill className="m-auto w-20" onClick={nextBenefit}/>
-</div>
+
+
+
 
 </div>
 
