@@ -36,7 +36,7 @@ function Servicios() {
         
           
           <div className="flex mt-12 sm:mt-24 w-full m-auto ">   
-          <button className=" border-2 border-violet-400 m-auto p-4 text-lg max-w-prose font-extralight bg-violet-400 text-gray-700  sm:tracking-wide uppercase sm:hover:bg-violet-300 sm:hover:text-black duration-700 w-11/12 sm:w-72">
+          <button className=" border-2 border-slate-400 m-auto p-4 text-lg max-w-prose font-extralight bg-slate-400 text-gray-800  sm:tracking-wide uppercase sm:hover:bg-slate-300 sm:hover:text-black duration-700 w-11/12 sm:w-72">
                     <Link activeClass="active" to={'contacto'} spy={true} smooth={true} duration={1000}>consultar</Link></button>
         </div>    
         </main>
