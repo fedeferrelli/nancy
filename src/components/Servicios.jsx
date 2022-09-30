@@ -5,7 +5,7 @@ import Button from '../utils/Button';
 
 function Servicios() {
     return (
-        <main className="bg-violet-300 py-12  sm:px-8" id='servicios'>
+        <main className="bg-slate-300 py-12  sm:px-8" id='servicios'>
 
 <div className="text-6xl m-auto  font-sans uppercase font-bold text-center  sm:tracking-wider leading-none pb-10 text-gray-700">
         Que Podemos hacer{" "}
@@ -15,7 +15,7 @@ function Servicios() {
 
 
         {servicios.map(servicio =>(
-            <div key={servicio.precio} className="w-11/12 sm:w-auto border border-violet-400 shadow-lg shadow-slate-500 m-auto py-4 px-4 flex flex-wrap  justify-evenly gap-6 font-sans rounded-lg sm:rounded-full text-xl bg-violet-200 text-gray-700">
+            <div key={servicio.precio} className="w-11/12 sm:w-auto border border-slate-400 shadow-lg shadow-slate-500 m-auto py-4 px-4 flex flex-wrap  justify-evenly gap-6 font-sans rounded-lg sm:rounded-full text-xl bg-slate-200 text-gray-700">
                
                {/*  <div className="flex flex-col"> 
                     <h1 className="mx-auto text-xl">Clases Online</h1>
