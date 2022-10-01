@@ -52,8 +52,8 @@ manera fundamental.</p>
 {flippedRoomData.pilares.map((pilar)=>(
     <div  key={pilar.title} className="sm:w-1/2 m-auto">
         
-            <p className="px-4 py-1 w-auto m-auto text-gray-200 bg-black text-center">{pilar.title}</p>
-    <p className="text-center p-4 border border-black ">{pilar.text}</p>
+            <p className="px-4 py-1 w-auto m-auto text-gray-200 bg-gray-800 text-center">{pilar.title}</p>
+    <p className="text-center p-4 border border-gray-800 ">{pilar.text}</p>
     </div>
 ))}
 
@@ -83,7 +83,7 @@ manera fundamental.</p>
 {flippedRoomData.beneficios.map(e=>(
 
 
-<div className="w-full m-auto h-full inline-block rounded-lg mr-3 align-middle overflow-hidden text-gray-800 whitespace-normal">
+<div key={e} className="w-full m-auto h-full inline-block rounded-lg mr-3 align-middle overflow-hidden text-gray-800 whitespace-normal">
     
     <div className="m-auto">
 
@@ -111,7 +111,7 @@ manera fundamental.</p>
 
 </div>
 
-<button className="border-2 border-black m-auto text-xl font-extralight text-black  sm:tracking-wide uppercase sm:hover:bg-black sm:hover:text-gray-200 duration-700 w-full sm:w-72 flex mt-10 sm:mt-20" onClick={showLessMetodology}><div className='p-4 w-full h-full'> ver menos</div></button>
+<button className="border border-gray-600 m-auto text-xl font-extralight text-black  sm:tracking-wide uppercase sm:hover:bg-gray-700 sm:hover:text-gray-200 duration-700 w-3/4 sm:w-72 flex mt-10 sm:mt-20" onClick={showLessMetodology}><div className='p-4 w-full h-full'> ver menos</div></button>
 
 </section>
 

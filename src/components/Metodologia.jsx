@@ -72,7 +72,7 @@ const showMoreMetodology = async() => {
 
         </div>
 
-        <div className="mt-10 w-full">
+        <div className="mt-10 w-3/4">
         
         <button className="border-2 m-auto text-xl font-extralight text-gray-200  sm:tracking-wide uppercase sm:hover:bg-gray-200 sm:hover:text-gray-700 duration-700 w-full sm:w-72 flex" onClick={showMoreMetodology}><div className='p-4 w-full h-full'> saber mas</div></button>
         </div>

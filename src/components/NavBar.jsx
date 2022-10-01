@@ -13,7 +13,7 @@ function NavBar({ spanish, setSpanish }) {
    
     const changeLanguage = () => {
 
-        console.log(data)
+      
       if (spanish) {
         setData(navBarData.spanish);
       } else {

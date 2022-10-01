@@ -150,8 +150,8 @@ function ContactForm() {
 <input
           type="submit"
           value="enviar mensaje"
-          className="w-full uppercase mt-10 text-secondary text-xl font-extralight sm:tracking-wide p-4
-          sm:hover:bg-gray-200 sm:hover:text-gray-700  ease-in-out duration-700 cursor-pointer border"
+          className="w-3/4 uppercase mt-10 text-secondary text-xl font-extralight sm:tracking-wide p-4
+          sm:hover:bg-gray-700 sm:hover:text-gray-200 ease-in-out duration-700 cursor-pointer border border-gray-600"
         ></input>
 
       </form>

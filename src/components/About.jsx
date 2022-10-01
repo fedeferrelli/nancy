@@ -57,7 +57,7 @@ function About({spanish}) {
 
         </div>
 
-        <div className="mt-10 w-full">
+        <div className="mt-10 w-3/4 ">
         <Button buttonText={data.boton} link={'contacto'}/>
         </div>
         </div>

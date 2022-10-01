@@ -22,7 +22,7 @@ function Hero() {
 
                 </div>
 
-               <div className='m-auto w-full'>
+               <div className='m-auto w-3/4'>
                
                <Button buttonText={'contactame'} link={'contacto'}/>
                
